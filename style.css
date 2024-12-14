@@ -1,0 +1,394 @@
+.blue-box {
+  width: 80%; /* Scales with the width of the screen */
+  height: 11%; /* Scales with the height of the screen */
+  background-color: #FF69B4; /* Hot Pink for a bright, fun vibe */
+  color: #F5F5F5; /* Indigo for a stylish contrast with the pink background */ /* White text for clear contrast */
+  font-size: 4vw; /* Scales with the viewport width */
+  font-weight: bold; /* Emphasizes the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* Softer rounded corners for elegance */
+  font-family: 'Comic Sans MS', cursive; /* Fun, playful font */
+  text-align: center;
+  position: absolute;
+  top: 4%; /* Distance from the top */
+  left: 50%; /* Centers horizontally */
+  transform: translateX(-50%); /* Adjusts for the box's width */
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5); /* Adds a glowing effect */
+}
+
+
+.image-box {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-box img {
+  width: 100%;  /* Makes the image take up the full width */
+  height: 240px; /* Makes the image take up the full height */
+  object-fit: cover; /* Ensures the image covers the container, cropping excess parts */
+  object-position: center; /* Centers the image */
+}
+
+.wish-box {
+  position: absolute;
+  top: 50%;  /* Adjusts vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.wish-box h1 {
+  font-size: 32px;  /* Adjust font size */
+  color: #333;  /* Change the text color */
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive;
+}
+.wish-box2 {
+  position: absolute;
+  top: 60%;  /* Adjusts vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+}
+.wish-box2 input {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.wish-box2 button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.wish-box2 button:hover {
+  background-color: #FF69B4;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+
+.gift-box {
+  position: absolute;
+  top: 70%;  /* Adjusts vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.gift-box h1 {
+  font-size: 32px;  /* Adjust font size */
+  color: #333;  /* Change the text color */
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.giftboxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px; /* Adds some space above the boxes */
+}
+
+.giftboxes .box1, .giftboxes .box2, .giftboxes .box3, .giftboxes .box4, .giftboxes .box5 {
+  width: 100px;
+  height: 100px;
+  background-color: #c30b39 !important; /* Hot Pink, forcing the color */
+  color: #F5F5F5; /* Light color text */
+  font-family: 'Comic Sans MS', cursive; /* Fun, playful font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px; /* Softer rounded corners */
+  font-size: 18px; /* Adjust text size */
+  font-weight: bold; /* Bold text */
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5); /* Adds a glowing effect */
+}
+
+.ThingsAboutRadhika {
+  display: flex;
+  justify-content: space-between; /* Space between GoodThings and BadThings */
+  align-items: center;
+  position: absolute; /* Keep absolute positioning */
+  top: 120%; /* Maintain the same vertical position */
+  left: 50%; /* Horizontally center the content */
+  transform: translateX(-50%); /* Ensure it's exactly in the center */
+  width: 90%; /* Adjust width to give space for both sub-boxes */
+}
+
+.GoodThings, .BadThings {
+  width: 45%; /* Ensure both divs take 45% of the container to leave space between them */
+  padding: 20px; /* More padding for better visibility */
+  font-size: 20px; /* Adjust text size */
+  font-weight: bold; /* Bold text */
+  font-family: 'Comic Sans MS', cursive; /* Same font */
+  text-align: center; /* Center the text */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5); /* Adds a glowing effect */
+  margin-left: 2%; /* Space between the boxes */
+  margin-right: 2%; /* Space between the boxes */
+  cursor: pointer; /* Shows a pointer to indicate it's clickable */
+}
+
+.GoodThings {
+  background-color: #FF69B4; /* Pink color for GoodThings */
+  color: #f5f5f5; /* Light color text */
+}
+
+.BadThings {
+  background-color: #9fbbb4e5; /* Light color for BadThings */
+  color: #f5f5f5; /* Light color text */
+}
+
+/* Initially hide the text box */
+.textbox {
+  display: none; /* Initially hidden */
+  width: 80%; /* Adjust size of the textbox */
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', cursive; /* Same font */
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  position: absolute; /* Make the text box overlay */
+  top: 120%; /* Adjust if needed to center the text box */
+  left: 50%;
+  transform: translateX(-50%); /* Ensure it's centered */
+  z-index: 100; /* Keep it on top */
+}
+
+.textbox textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', cursive;
+  border-radius: 10px;
+  border: 2px solid #FF69B4;
+  box-sizing: border-box;
+}
+
+.textbox button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.textbox button:hover {
+  background-color: #FF3385; /* Slightly darker pink */
+}
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+/* Quiz Heading */
+.QuizHeading {
+  position: absolute;
+  top: 145%; /* Position 145% from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Quiz Container */
+.quiz-container {
+  position: absolute;
+  top: 162%; /* Start after the heading */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Control the width of the quiz container */
+  margin-top: 20px; /* Some space from the heading */
+}
+
+/* Each Question */
+.question {
+  margin-bottom: 2%; /* Adds 2% space between each question */
+  padding: 15px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Options styling */
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Results Section */
+.quiz-results {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#result {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; /* Centers content within #result */
+}
+
+.score-circle {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #FF69B4; /* Pink color for the circle */
+  color: white;
+  line-height: 90px; /* Aligns text vertically within the circle */
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px; /* Spacing between "Your Score" and the circle */
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4081;
+}
+
+/* Green and Red Styling for Answer */
+.correct {
+  background-color: green;
+  color: white;
+}
+
+.incorrect {
+  background-color: red;
+  color: white;
+}
+
+.score-circle {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #FF69B4; /* Pink color for the circle */
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+.giftboxes {
+  position: absolute;
+  top: 90%;
+  display: flex; /* Arrange boxes in a horizontal row */
+  justify-content: space-between; /* Evenly space out the boxes */
+  align-items: center; /* Vertically align boxes in the center */
+  width: 100%; /* Ensure the container takes the full width */
+}
+
+
+
+.giftboxes div {
+  width: 100px;  /* Set the width of each box */
+  height: 100px; /* Set the height of each box */
+  background-color: #4CAF50; /* Background color for each box */
+  color: white; /* Text color inside the boxes */
+  display: flex; /* Use flexbox to center the content inside each box */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  font-size: 18px; /* Text size */
+  border-radius: 5px; /* Rounded corners */
+}
+
+
+
+
+#crackers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction with crackers */
+  overflow: hidden;
+  z-index: 10; /* Appear above other elements */
+}
+
+
+
+.celebration-emoji {
+  position: absolute;
+  font-size: 2rem; /* Adjust the size of the emoji */
+  animation: moveEmoji 2s ease-out infinite;
+}
+
+@keyframes moveEmoji {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(50px, 50px); /* Movement effect */
+    opacity: 0;
+  }
+}
+
